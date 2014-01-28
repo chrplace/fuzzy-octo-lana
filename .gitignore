@@ -1,4 +1,3 @@
+node_modules/
+build/
 *.log
-*.pot
-*.pyc
-local_settings.py
