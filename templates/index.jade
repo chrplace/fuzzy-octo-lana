@@ -7,6 +7,8 @@ html
     script(src="scripts/scripts.js")
     script(src="scripts/simple-slider.js")
 
-body!= contents['index.md'].html
+body
+    scripts(src="scripts/topvar.js")
+    != contents['index.md'].html
     script(src="scripts/slider-value.js")
 

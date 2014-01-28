@@ -9,4 +9,5 @@
       $(this)
         .nextAll(".output:first")
           .html(data.value.toFixed(1));
+      window.freq = data.value.toFixed(1);
     });

@@ -1,6 +1,10 @@
+
 function refreshIt(element) {
-                setTimeout(function() {
-                    element.src = element.src.split('?')[0] + '?' + new Date().getTime();
-                    refreshIt(element);
-                }, 1500); // refresh every 50ms
-            }
+  if( window.freq == null ) {
+    window.freq = 1.5;
+  }
+  setTimeout(function() {
+    element.src = element.src.split('?')[0] + '?' + new Date().getTime();
+    refreshIt(element);
+  }, window.freq*1000);
+}
